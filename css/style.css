@@ -1,0 +1,76 @@
+:root {
+  --colorIcon: #ffa95c;
+  --colorSection: #ffaa5d;
+  --openSans: "Open Sans", sans-serif;
+  --fontSizePrimary: 16px;
+}
+body {
+  margin: 0;
+  font-family: var(--openSans);
+  font-size: var(--fontSizePrimary);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* width: 80px; */
+  height: 100vh;
+  border-right: 1px solid #eb916c;
+}
+.menu li {
+  /* border: 1px solid black; */
+  /* background: red; */
+  padding: 0.9em 0;
+  text-align: center;
+}
+.menu span i {
+  color: var(--colorIcon);
+  font-size: 1.2em;
+  /* margin: 10px; */
+}
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-rows: 5% 95%;
+  grid-template-areas:
+    "header contact"
+    "header hero";
+}
+.header {
+  grid-area: header;
+  background-color: red;
+}
+.contact {
+  grid-area: contact;
+  background-color: aqua;
+}
+.contact-grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.contact-grid a {
+  /* border: 1px solid black; */
+  margin-right: 20px;
+  padding: 8px 10px;
+}
+.contact-grid a i {
+  color: black;
+}
+.hero {
+  grid-area: hero;
+  background-color: green;
+}
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+/* #6294F3 */
